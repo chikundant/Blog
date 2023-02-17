@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>User: {{ user.username }}</h1>
+{% if user.about_me %}<p>{{ user.about_me }}</p>{% endif %}
+<a href="{{url_for('logout')}}"><li><img src="" alt="logout"></li></a>
+{%endblock%}
